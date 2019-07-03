@@ -1,5 +1,5 @@
 # WireNoArduino
-I wanted to use the Wire library without the other arduino core libraries to save memory and to reduce my code hinging on pins_arduino.h and Arduino.h. Basically I brute force moved things that were needed into the twi.c file. Also I removed the Stream usages. So if your code needs that this won't work.
+I wanted to use the Wire library without the other arduino core libraries to save memory and to reduce my code hinging on pins_arduino.h and Arduino.h. Basically I brute force moved things that were needed into the twi.c file. Also I removed the Stream usages. So if your code needs that, this may not work.
 
 To adjust for your application:
 in twi.c -> twi_init()
