@@ -4,7 +4,7 @@ I wanted to use the Wire library without the other arduino core libraries to sav
 To adjust for your application:
 in twi.c -> twi_init()
 
-You may need to set timer 0 prescale factor to 64
+You may need to set timer 0 prescale factor to 64,
 for my application (ATMEGA644pa) I used this:
 
     sbi(TCCR0B, CS01);
